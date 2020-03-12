@@ -184,6 +184,7 @@ function main(context) {
       if (previousDeployment !== deployment) {
         previousDeployment = deployment;
         context.api.sendNotification({
+          id: 'bannerlord-activate-mods',
           type: 'info',
           allowSuppress: true,
           message: 'Use game launcher to activate mods',
